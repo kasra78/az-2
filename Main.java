@@ -1,6 +1,5 @@
 public class Main {
     public static void main(String[] args) {
-
     }
 
     private static int plusOne(int a) {
@@ -22,9 +21,9 @@ public class Main {
     }
 
     static int subtract(int a, int b) {
-        b--;
-        if (b == 0)
+        if (b == 1)
             return minus_one(a);
+        b--;
         a = subtract(a, b);
         return minus_one(a);
     }
