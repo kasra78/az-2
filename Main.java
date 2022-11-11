@@ -9,7 +9,7 @@ public class Main {
         System.out.println("To plus params enter \"+\" and to subtract them enter \"-\":");
         String operator = scanner.next();
         if (operator.equals("+")) {
-            System.out.println(plus(a, b));
+            System.out.println(sum(a, b));
         } else if (operator.equals("-")) {
             System.out.println(subtract(a, b));
         } else {
@@ -21,7 +21,7 @@ public class Main {
         return a + 1;
     }
 
-    private static int plus(int a, int b) {
+    private static int sum(int a, int b) {
         if (b < 0) {
             return subtract(a, -b);
         } else if (b == 0) {
@@ -29,20 +29,20 @@ public class Main {
         } else if (b == 1) {
             return plusOne(a);
         } else {
-            return plusOne(plus(a, b - 1));
+            return plusOne(sum(a, b - 1));
         }
     }
 
-    private static int minus_one(int a) {
+    private static int minusOne(int a) {
         return a - 1;
     }
 
-    static int subtract(int a, int b) {
-        if (b == 1)
-            return minus_one(a);
+    private static int subtract(int a, int b) {
+        if (b == 1) {
+            return minusOne(a);
+        }
         b--;
         a = subtract(a, b);
-        return minus_one(a);
+        return minusOne(a);
     }
-
 }
