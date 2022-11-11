@@ -21,4 +21,12 @@ public class Main {
         return a - 1;
     }
 
+    static int subtract(int a, int b) {
+        b--;
+        if (b == 0)
+            return minus_one(a);
+        a = subtract(a, b);
+        return minus_one(a);
+    }
+
 }
