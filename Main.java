@@ -8,7 +8,9 @@ public class Main {
     }
 
     private static int plus(int a, int b) {
-        if (b == 1) {
+        if (b == 0) {
+            return a;
+        } else if (b == 1) {
             return plusOne(a);
         } else {
             return plusOne(plus(a, b - 1));
