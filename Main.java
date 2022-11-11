@@ -6,14 +6,15 @@ public class Main {
         System.out.println("Enter 2 numbers:");
         int a = scanner.nextInt();
         int b = scanner.nextInt();
-        System.out.println("If you want to add the numbers enter 1, if you want to subtract them enter 2:");
-        int x = scanner.nextInt();
-        if (x == 1)
+        System.out.println("To plus params enter \"+\" and to subtract them enter \"-\":");
+        String operator = scanner.next();
+        if (operator.equals("+")) {
             System.out.println(plus(a, b));
-        else if (x == 2)
+        } else if (operator.equals("-")) {
             System.out.println(subtract(a, b));
-        else
-            System.out.println("Error!");
+        } else {
+            System.out.println("Operation invalid");
+        }
     }
 
     private static int plusOne(int a) {
