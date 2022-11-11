@@ -1,5 +1,21 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter 1st param:");
+        int a = scanner.nextInt();
+        System.out.println("Please enter 2st param:");
+        int b = scanner.nextInt();
+        System.out.println("To plus params enter \"+\" and to subtract them enter \"-\":");
+        String operator = scanner.next();
+        if (operator.equals("+")) {
+            System.out.println(plus(a, b));
+        } else if (operator.equals("-")) {
+            System.out.println(subtract(a, b));
+        } else {
+            System.out.println("Operation invalid");
+        }
     }
 
     private static int plusOne(int a) {
