@@ -7,6 +7,16 @@ public class Main {
         return a + 1;
     }
 
+    private static int plus(int a, int b) {
+        if (b == 0) {
+            return a;
+        } else if (b == 1) {
+            return plusOne(a);
+        } else {
+            return plusOne(plus(a, b - 1));
+        }
+    }
+
     private static int minus_one(int a) {
         return a - 1;
     }
