@@ -33,16 +33,16 @@ public class Main {
         }
     }
 
-    private static int minus_one(int a) {
+    private static int minusOne(int a) {
         return a - 1;
     }
 
-    static int subtract(int a, int b) {
-        if (b == 1)
-            return minus_one(a);
+    private static int subtract(int a, int b) {
+        if (b == 1) {
+            return minusOne(a);
+        }
         b--;
         a = subtract(a, b);
-        return minus_one(a);
+        return minusOne(a);
     }
-
 }
