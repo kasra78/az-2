@@ -4,6 +4,6 @@ public class Main {
     }
 
     private static int plusOne(int a) {
-        return a + 1;
+        return a++;
     }
 }
