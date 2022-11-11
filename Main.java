@@ -3,9 +3,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter 1st param:");
+        System.out.println("Enter 2 numbers:");
         int a = scanner.nextInt();
-        System.out.println("Please enter 2st param:");
         int b = scanner.nextInt();
         System.out.println("To plus params enter \"+\" and to subtract them enter \"-\":");
         String operator = scanner.next();
