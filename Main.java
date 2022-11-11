@@ -16,4 +16,9 @@ public class Main {
             return plusOne(plus(a, b - 1));
         }
     }
+
+    private static int minus_one(int a) {
+        return a - 1;
+    }
+
 }
