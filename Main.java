@@ -6,4 +6,12 @@ public class Main {
     private static int plusOne(int a) {
         return a + 1;
     }
+
+    private static int plus(int a, int b) {
+        if (b == 1) {
+            return plusOne(a);
+        } else {
+            return plusOne(plus(a, b - 1));
+        }
+    }
 }
